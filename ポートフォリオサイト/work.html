@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高木規浩のwork</title>
+
+    <link rel="stylesheet" href="css/work.css">
+
+    <!-- ハンバーガーメニュー -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header_wrap">
+
+            <div class="sp_btn"><span></span></div>
+            <div class="sp_nav">
+                <ul>
+                    <li class="h-1"> <a href="index.html#home">home</a></li>
+                    <li class="h-1"><a href="index.html#about">about</a></li>
+                    <li class="h-1"><a href="index.html#work">work</a> </li>
+                    <li class="h-1"><a href="index.html#contact">contact</a></li>
+                </ul>
+
+            </div>
+
+            <div class="pc_nav">
+                <ul>
+                    <li> <a href="index.html#home">home</a></li>
+                    <li><a href="index.html#about">about</a></li>
+                    <li><a href="index.html#work">work</a> </li>
+                    <li><a href="index.html#contact">contact</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </header>
+
+
+    <div class="work">
+        <div class="work-title">
+            <h2>work</h2>
+            <p>デザイン思考でビジネスの課題に対しての
+                <br>本質的な解決策を提案します。
+            </p>
+
+        </div>
+
+
+        <div class="more-contents">
+
+            <div class="more-content">
+                <picture>
+                    <a href="image/work1.jpg"><img src="image/デザイン課題1回目 サイズ変更.jpg" alt="work1"></a>
+
+                </picture>
+                <!-- <p></p> -->
+
+            </div>
+
+            <div class="more-content">
+                <picture>
+                    <a href="image/work2.jpg"><img src="image/デザイン課題2回目＿高木規浩.jpg" alt="work2"></a>
+
+                </picture>
+
+                <!-- <p></p> -->
+
+            </div>
+
+            <div class="more-content">
+                <picture>
+                    <a href="image/work3.jpg"><img src="image/デザイン課題3回目 サイズ変更.jpg" alt="work3"></a>
+
+                </picture>
+                <!-- <p></p> -->
+
+            </div>
+
+            <div class="more-content">
+                <picture>
+                    <a href="image/work4.jpg"><img src="image/第4回デザイン課題 サイズ変更.jpg" alt="work4"></a>
+
+                </picture>
+                <!-- <p></p> -->
+
+            </div>
+
+            <div class="more-content">
+                <picture>
+                    <a href="image/work5.jpg"><img src="image/第5回デザイン課題 サイズ変更.jpg" alt="work5"></a>
+
+                </picture>
+                <!-- <p></p> -->
+
+            </div>
+
+        </div>
+
+        <!-- <div class="modal">
+            <div class="bigimg"><img src="" alt=""></div>
+            <p class="close-btn"><a href="">✖</a></p>
+        </div> -->
+
+    </div>
+
+    <a href="index.html#work">
+        <button class="btn-back">
+            元に戻る
+        </button>
+    </a>
+
+
+    <div class="footer">
+        <div class="footer-nav">
+            <ul>
+                <li> <a href="index.html#home">home</a></li>
+                <li><a href="index.html#about">about</a></li>
+                <li><a href="index.html#work">work</a> </li>
+                <li><a href="index.html#contact">contact</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+    $(function () {
+
+        $('.sp_btn,.sp_nav ul ').click(function () {
+            $('.sp_nav').fadeToggle();
+            $('.sp_btn').toggleClass('open');
+        });
+
+        $('a[href^="#"]').click(function () {
+            // $('.sp_nav').fadeOut();
+
+            // スクロールの速度
+            let speed = 400;
+            // スクロールタイプ
+            let type = 'swing';
+            // href属性の取得
+            let href = $(this).attr("href");
+            // 移動先の取得（hrefが#indexならトップ$(html)に、）
+            let target = $(href == "#" ? '' : href);
+            // 移動先のポジション取得
+            let position = target.offset().top;
+            // animateでスムーススクロール
+            $('body,html').animate({ scrollTop: position }, speed, type);
+            return false
+
+        });
+
+        // $(function () {
+        //     $('.more-content a').click(function () {
+        //         var imgSrc = $(this).children().attr('src');
+        //         $('.bigimg').children().attr('src', imgSrc);
+        //         $('.modal').fadeIn();
+        //         $('body,html').css('overflow-y', 'hidden');
+        //         return false
+        //     });
+
+        //     $('.close-btn').click(function () {
+        //         $('.modal').fadeOut();
+        //         $('body,html').css('overflow-y', 'visible');
+        //         return false
+        //     });
+        // });
+
+
+    });
+
+</script>
+
+
+</html>
