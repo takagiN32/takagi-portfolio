@@ -69,6 +69,7 @@ header {
     justify-content: space-around; 
     position: absolute;
     top: 50px;
+    margin:0 33.8% 0 33.8% ;
 }
 .pc_nav li {
     display: flex;
@@ -105,14 +106,12 @@ header {
 }
 .header-title h1{
     font-size: 7.6vW;
-    font-family: sans-serif;
 
 }
 
 .header-title h2{
-    font-size: 25px;
+    font-size: 2.6vw;
     line-height: 1.4;
-    font-family: sans-serif;
 }
 
 .header-br{
@@ -135,7 +134,6 @@ display:none;
 text-align: center;
 font-size: 4.2vw;
 padding: 40px 0 40px 0;
-font-family: sans-serif;
 }
 
 .about{ 
@@ -147,17 +145,17 @@ font-family: sans-serif;
 
 .about-content{
     display: flex;
+    max-width: 70%;
+    margin: auto;
     
 }
 .about-img{
     max-width: 50%;
 }
 .about-img img{
-    width: 60%;
-    padding-left: 10%;
+    width: 90%;
+    padding-right: 10%;
     padding-top: 10%;
-    text-align: center;
-    margin: auto;
     
 }
 .about-img-sp{
@@ -172,18 +170,16 @@ font-family: sans-serif;
 }
 
 .about-t h2{
-    font-size: 30px;
-    font-family: sans-serif;
+    font-size: 3vw;
 }
 .about-t h3{
-    font-size: 15px;
+    font-size: 1.5vw;
     padding: 10px 0 10px;
-    font-family: sans-serif;
 }
 
 .about-t p{
 line-height: 1.5;
-font-size: 20px;
+font-size: 1.7vw;
 padding: 20px 0;
 }
 
@@ -191,13 +187,13 @@ padding: 20px 0;
 /* Work */
 
 .work{
-    padding: 0 0 40px 0;
+    padding: 60px 0 40px 0;
     background: linear-gradient(#fffadc 70%,#d1edc3);
+    padding-bottom:150px;
 }
 
 .work-title{
     text-align: center ;
-font-family: sans-serif;
 }
 
 .work-title h2{
@@ -209,6 +205,8 @@ font-size: 3.2vw;
 padding-top: 30px;
 line-height: 1.8;
 padding-bottom: 30px;
+
+color:#2f8f0f;
 }
 
 .slider{
@@ -216,6 +214,7 @@ padding-bottom: 30px;
     justify-content: center;
     max-width: 100%;
     overflow: hidden;
+    padding-top: 35px;
 }
 
 .work-content{
@@ -242,14 +241,14 @@ padding-bottom: 30px;
 }
 
 .slick-prev{
-    padding-top: 20%;
+    padding-top: 25%;
     left: 30%;
     top: 0px;   
     z-index: 100;
 }
 
 .slick-next{
-    padding-top: 20%;
+    padding-top: 25%;
     right: 30%;
     top: 0px;
 }
@@ -264,63 +263,66 @@ padding-bottom: 30px;
     border-radius: 30px;
     width: 16vw;
     justify-content: center;
+    color: #ffffff;
+    vertical-align: middle;
+    font-size: 2.6vw;
 }
-.btn-more a{
-    margin: auto;
-}
+
 
 /* contact */
 
 .contact{
     padding: 0 0 100px 0;
     background: linear-gradient(#d1edc3 70%,#ffffff);
+
 }
 
 .contact-title{
     text-align: center;
     font-size: 4.2vw;
     margin: 0 0 40px 0;
-    font-family: sans-serif;
 }
 
 .contact-t{
     margin: auto;
-    width: 70%;
-    font-family: sans-serif;
+    max-width: 60%;
+    
     
 }
 
 .contact-t h3{
-    font-size: 25px;
-    text-align: center;
+    font-size: 2.5vw;
+    text-align: inherit;
+    padding-top: 90px;
+    padding-bottom: 40px;
 }
 
 .contact-t p{
     line-height: 1.8;
     padding-top: 20px;
+    font-size: 1.2vw;
 }
 
 .contact-form{
     margin: auto;
-    width: 70%;
+    max-width: 60%;
     padding: 30px 0 30px 0;
-    font-family: sans-serif;
 }
 
 .input-field {
     display: flex;
     flex-flow: column;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     
 
 }
 .input-field label{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 
 .input-field textarea{
-    height: 70px;
+    height: 100px;
 }
 
 .btn{
@@ -333,6 +335,8 @@ padding-bottom: 30px;
     width: 16vw;
     margin-top: 30px;
     text-align: center;
+    color: #ffffff;
+    font-size: 2.6vw;
 }
 
 
@@ -356,7 +360,6 @@ padding-bottom: 30px;
     padding: 0 30px 0 30px;
     color: green;
     font-size: 18px;
-    font-family: sans-serif;
 }
 
 @media screen and (max-width: 1100px) {
@@ -458,6 +461,7 @@ padding-bottom: 30px;
 
     .about-t{
         margin: auto;
+        max-width: 100%;
     }
     
     .about-img{
@@ -476,7 +480,6 @@ padding-bottom: 30px;
         justify-content: space-around;
         flex-direction: column;
         margin: auto;
-        padding-left: 10%;
         
     }
     .about-t2{
@@ -489,6 +492,9 @@ padding-bottom: 30px;
     }
 
     /* お問合わせ */
+    .contact-t{
+        max-width: 70%;
+    }
     .contact-form{
         max-width:70% ;
     }
