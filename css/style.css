@@ -245,6 +245,7 @@ padding-bottom: 30px;
     padding-top: 20%;
     left: 30%;
     top: 0px;   
+    z-index: 100;
 }
 
 .slick-next{
@@ -564,6 +565,7 @@ padding-bottom: 30px;
         padding-top: 20%;
         left: 20px;
         top: 150px;
+        z-index: 100;
     }
     .slick-next{
         padding-top: 20%;
