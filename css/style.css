@@ -590,6 +590,9 @@ padding-bottom: 30px;
     font-size: 6.93vw;
    }
 
+   .btn button{
+    width: 30vw;
+}
 
    /* フッター */
 
